@@ -23,7 +23,6 @@
     "lucide-react": "^0.483.0",
     "node-pty": "^1.0.0",
     "ping": "^0.4.4",
-    "react-pdf": "^9.2.1",
     "systeminformation": "^5.25.11",
     "three": "^0.174.0"
   },

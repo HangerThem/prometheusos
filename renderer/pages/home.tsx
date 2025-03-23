@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import Head from "next/head"
 import { useRouter } from "next/router"
+import Image from "next/image"
+import Logo from "../components/Logo"
 
 export default function HomePage() {
   const [percent, setPercent] = useState(0)
@@ -14,25 +16,19 @@ export default function HomePage() {
       clearInterval(interval)
     }, 2000)
     setTimeout(() => {
-      router.push("/dashboard")
+      // router.push("/dashboard")
     }, 5000)
     return () => clearInterval(interval)
   }, [])
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-row items-center justify-center min-h-screen py-2 gap-4">
       <Head>
         <title>PrometheusOS</title>
       </Head>
 
-      <div className="fixed inset-0 flex items-center justify-center relative">
-        <div className="text-gray-600 text-7xl font-bold">PrometheusOS</div>
-        <div
-          className="text-white text-7xl font-bold absolute transition-all duration-[2s] ease-in-out bg-gradient-to-r from-primary to-transparent"
-          style={{ clipPath: `inset(0 ${100 - percent}% 0 0)` }}
-        >
-          PrometheusOS
-        </div>
+      <div className="flex flex-col items-center justify-center h-64">
+        <Logo percent={percent} />
       </div>
     </div>
   )
