@@ -1,0 +1,12 @@
+appId: com.example.nextron
+productName: PrometheusOS
+copyright: Copyright © 2025 HangerThem
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
