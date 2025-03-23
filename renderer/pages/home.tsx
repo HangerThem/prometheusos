@@ -16,7 +16,7 @@ export default function HomePage() {
       clearInterval(interval)
     }, 2000)
     setTimeout(() => {
-      // router.push("/dashboard")
+      router.push("/dashboard")
     }, 5000)
     return () => clearInterval(interval)
   }, [])

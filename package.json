@@ -27,6 +27,7 @@
     "three": "^0.174.0"
   },
   "devDependencies": {
+    "@electron/rebuild": "^3.7.1",
     "@types/node": "20.17.25",
     "@types/ping": "^0.4.4",
     "@types/react": "18.3.19",
@@ -34,7 +35,6 @@
     "autoprefixer": "^10.4.19",
     "electron": "^34.0.0",
     "electron-builder": "^24.13.3",
-    "electron-rebuild": "^3.2.9",
     "next": "^14.2.4",
     "nextron": "^9.5.0",
     "postcss": "^8.4.38",
